@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yehia.calculator.MainActivity">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="ENTER 2 INTEGER"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ "
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="79dp" />
+    <Button
+        android:id="@+id/neg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- "
+        android:layout_alignBaseline="@+id/pos"
+        android:layout_alignBottom="@+id/pos"
+        android:layout_toEndOf="@+id/pos" />
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* "
+        android:layout_alignBaseline="@+id/neg"
+        android:layout_alignBottom="@+id/neg"
+        android:layout_toEndOf="@+id/neg" />
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* "
+        android:layout_alignBaseline="@+id/mul"
+        android:layout_alignBottom="@+id/mul"
+        android:layout_toEndOf="@+id/mul" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="133dp"
+        android:text="Result" />
+
+
+</RelativeLayout>
