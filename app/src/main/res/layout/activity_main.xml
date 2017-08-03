@@ -53,7 +53,7 @@
         android:layout_alignBottom="@+id/mul"
         android:layout_toEndOf="@+id/mul"
         android:onClick="caclulate"
-        android:text="* " />
+        android:text="/ " />
 
     <Button
         android:id="@+id/button8"
