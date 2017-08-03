@@ -6,25 +6,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-class StringEx  extends RuntimeException {
-    public  StringEx(String message)
-    {
-        super(message);
 
-    }
-}
 
 public class MainActivity extends AppCompatActivity {
 private Button plus,neg,mult,div;
 private EditText ed;
     double tempf,temps,result ;
    int op;
-    public void check(){
-    if(!(tempf >= -100000000.0000 && tempf <= 1000000000.000))
-    {
-       throw new StringEx("Error enter an Integer value");
-    }
-    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,18 +24,14 @@ private EditText ed;
         div = (Button) findViewById(R.id.div);
         ed = (EditText) findViewById(R.id.editText2);
     }
-    public void getTempf() throws StringEx{
+    public void getTempf() {
 
 
 
       try {
 
           tempf = Double.parseDouble(ed.getText().toString());
-         /* if(!(tempf >= -100000000.0000 && tempf <= 1000000000.000))
-          {
-              Toast.makeText(this, "Error enter an Integer value", Toast.LENGTH_SHORT).show();
-              tempf = 0;
-          }*/
+
 
           }catch (NumberFormatException e){
           Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
