@@ -48,7 +48,7 @@ public void caclulate(View view){
     }
 
 }
-void setResult(View view){
+ public void setResult(View view){
     temps = Double.parseDouble(ed.getText().toString());
 
     switch (op)
