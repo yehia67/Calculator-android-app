@@ -24,7 +24,7 @@ private EditText ed;
     public void getTempf(){
 
         tempf = Double.parseDouble(ed.getText().toString());
-        ed.setText("0");
+        ed.setText("");
 
     }
 
