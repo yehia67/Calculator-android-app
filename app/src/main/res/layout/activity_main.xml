@@ -19,34 +19,41 @@
         android:id="@+id/pos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+ "
-        android:layout_below="@+id/editText2"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="79dp" />
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="79dp"
+        android:onClick="caclulate"
+        android:text="+ " />
+
     <Button
         android:id="@+id/neg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="- "
         android:layout_alignBaseline="@+id/pos"
         android:layout_alignBottom="@+id/pos"
-        android:layout_toEndOf="@+id/pos" />
+        android:layout_toEndOf="@+id/pos"
+        android:onClick="caclulate"
+        android:text="- " />
+
     <Button
         android:id="@+id/mul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="* "
         android:layout_alignBaseline="@+id/neg"
         android:layout_alignBottom="@+id/neg"
-        android:layout_toEndOf="@+id/neg" />
+        android:layout_toEndOf="@+id/neg"
+        android:onClick="caclulate"
+        android:text="* " />
+
     <Button
         android:id="@+id/div"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="* "
         android:layout_alignBaseline="@+id/mul"
         android:layout_alignBottom="@+id/mul"
-        android:layout_toEndOf="@+id/mul" />
+        android:layout_toEndOf="@+id/mul"
+        android:onClick="caclulate"
+        android:text="* " />
 
     <Button
         android:id="@+id/button8"
@@ -55,6 +62,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="133dp"
+        android:onClick="setResult"
         android:text="Result" />
 
 
